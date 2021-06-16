@@ -65,6 +65,7 @@ class TerminalNotifier(object):
           Notifier.notify('Hello World', activate='com.apple.Safari')
           Notifier.notify('Hello World', open='http://github.com/')
           Notifier.notify('Hello World', execute='say "OMG"')
+          Notifier.notify('Hello World', appIcon='https://assets-cdn.github.com/images/modules/logos_page/Octocat.png')
 
           The options `wait` is a boolean for whether or not we need to wait (block) for the background process to finish
         """
