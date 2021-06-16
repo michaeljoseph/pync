@@ -8,7 +8,8 @@
 
 A simple Python wrapper around the [terminal-notifier][HOMEPAGE] command-line tool (version 2.0.0), which allows you to send User Notifications to the Notification Center on Mac OS X 10.10, or higher.
 
-![Screenshot](http://f.cl.ly/items/1k051n3k0u0i101m1i0U/Screen%20Shot%202012-08-24%20at%2012.20.40%20PM.png)
+<!-- TODO: add screenshot.png to repo -->
+<!-- ![Screenshot](http://f.cl.ly/items/1k051n3k0u0i101m1i0U/Screen%20Shot%202012-08-24%20at%2012.20.40%20PM.png) -->
 
 ### Installation
 
@@ -38,6 +39,7 @@ import pync
 
 pync.notify('Hello World')
 pync.notify('Hello World', title='Python')
+pync.notify('Hello World', sound='Ping')
 pync.notify('Hello World', group=os.getpid())
 pync.notify('Hello World', activate='com.apple.Safari')
 pync.notify('Hello World', open='http://github.com/')
@@ -52,9 +54,10 @@ pync.list_notifications(os.getpid())
 Using the notifier object
 ```python
 from pync import Notifier
-
+          
 Notifier.notify('Hello World')
 Notifier.notify('Hello World', title='Python')
+Notifier.notify('Hello World', sound='Ping')
 Notifier.notify('Hello World', group=os.getpid())
 Notifier.notify('Hello World', activate='com.apple.Safari')
 Notifier.notify('Hello World', open='http://github.com/')
